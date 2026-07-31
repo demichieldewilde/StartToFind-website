@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product — What's already built | Find-It!</title>
+<meta name="description" content="A walkthrough of what's already working in the Find-It! app today: local product search, automated indoor mapping, shop mode with self-checkout, SME storefronts, predictive advertising, and accessibility analytics.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2312352d'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle'%3E%F0%9F%93%8D%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">📍</span>
+      Find<span class="accent">It!</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="pilot.html">Paid Pilot</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="lang-switch"><a href="product.html" class="active">EN</a><a href="product-de.html">DE</a></li>
+      <li><a href="pilot.html#apply" class="nav-cta">Apply for the pilot</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="pagehero">
+  <div class="container">
+    <span class="badge">Inside the app</span>
+    <h1>What's already built — not a roadmap, the working app.</h1>
+    <p class="lead">Everything on this page is functioning in the current build today. This isn't a vision deck: it's a walkthrough of the actual product, feature by feature, with real screen recordings and screenshots.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+
+    <div class="row">
+      <div class="row-media">
+        <video autoplay muted loop playsinline poster="img/poster-discover-space.jpg" style="width:100%">
+          <source src="video/discover-space.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="row-text">
+        <span class="status-pill">Live in the app</span>
+        <h3>Local Product &amp; Place Search Engine</h3>
+        <p>The core entry point of Find-It!. Customers search for products, shops, services, rooms, or categories and get real, mapped results back — with live counts, sponsored placements from local shops, and friend activity, not a generic web listing.</p>
+        <ul>
+          <li>Search across every participating local shop at once</li>
+          <li>Sponsored placements — the advertising layer that funds the free core</li>
+          <li>Discovery of small or unique shops that would otherwise be buried behind big platforms</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row reverse">
+      <div class="row-media">
+        <video autoplay muted loop playsinline poster="img/poster-shop-discovery.jpg" style="width:100%">
+          <source src="video/shop-discovery.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="row-text">
+        <span class="status-pill">Live in the app</span>
+        <h3>Browse Every Shop, Building &amp; Campus</h3>
+        <p>Beyond product search, customers can browse the directory itself — filtered by what actually matters to them, not just price.</p>
+        <ul>
+          <li>Filter by local origin, accessibility, vegan, or cheapest-first</li>
+          <li>Browse by building, campus, or individual shop</li>
+          <li>Distance and price shown up front on every card</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-media">
+        <video autoplay muted loop playsinline poster="img/poster-world-map.jpg" style="width:100%">
+          <source src="video/world-map.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="row-text">
+        <span class="status-pill">Live in the app</span>
+        <h3>Indoor Mapping &amp; Pathfinding</h3>
+        <p>The map layer that ties everything together — from city-wide search down to campus- and building-level detail. Wheelchair-, stroller-, and delivery-friendly routing is part of the same engine.</p>
+        <ul>
+          <li>Built on OpenStreetMap, with every mapped site pinned automatically</li>
+          <li>Route guidance to rooms, shelves, departments, entrances, and exits</li>
+          <li>Community and business-verified corrections keep maps accurate over time</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row reverse">
+      <div class="row-media">
+        <img src="img/shot-floor-editor.jpg" alt="Find-It! floor-plan editor showing a real building plan converted into rooms, aisles, doors, and navigable connections">
+      </div>
+      <div class="row-text">
+        <span class="status-pill">Live in the app</span>
+        <h3>Automated Graph Extraction</h3>
+        <p>Deterministic, lightweight algorithms convert an uploaded floor plan into a pathfinding-ready graph — rooms, aisles, doors, and connections, editable and correctable in the browser. No expensive sensors, no heavy AI training required for the first version.</p>
+        <ul>
+          <li>Low cost per site, which is what makes free onboarding possible at all</li>
+          <li>Fast onboarding, with the long-term goal of map creation in minutes</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-media">
+        <video autoplay muted loop playsinline poster="img/poster-shoplist-and-mode.jpg" style="width:100%">
+          <source src="video/shoplist-and-mode.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="row-text">
+        <span class="status-pill">Live in the app</span>
+        <h3>Shopping Lists, Shop Mode &amp; Self-Checkout</h3>
+        <p>Build a list before visiting, then get it turned into a live in-store route with a synced checklist, nearby personalized offers, and budget tracking — down to a working scan-and-pay checkout.</p>
+        <ul>
+          <li>Full FindIt Route with live position and a synced, tickable list</li>
+          <li>Location-aware, personalized "nearby advertisements" while you shop</li>
+          <li>FindIt Checkout with wallet or card — currently a working prototype, ready to connect to a real payment provider</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row reverse">
+      <div class="row-media">
+        <video autoplay muted loop playsinline poster="img/poster-shop-setup.jpg" style="width:100%">
+          <source src="video/shop-setup.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="row-text">
+        <span class="status-pill">Live in the app</span>
+        <h3>Free SME Digital Storefronts</h3>
+        <p>Every participating business gets a step-by-step setup dashboard — building &amp; layout, products &amp; deals, scan &amp; organise, shop info — as a lightweight alternative to expensive e-commerce infrastructure.</p>
+        <ul>
+          <li>Guided setup checklist, no technical skills required</li>
+          <li>Manage every building, floor plan, and product catalogue from one place</li>
+          <li>This is exactly what the founding team walks pilot partners through, in person</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-media">
+        <div class="plan-pipeline">
+          <div>
+            <img src="img/shot-buyer-interest.jpg" alt="Find-It! Buyer Interest & Advertising dashboard showing an explainable propensity model with scored shoppers">
+            <p class="caption">Explainable propensity model</p>
+          </div>
+          <div>
+            <img src="img/shot-buyer-interest-2.jpg" alt="Find-It! advertising targeting options: shoppers likely to buy, near this shop, similar products, or buyers of another product">
+            <p class="caption">Buy advertising space, by intent</p>
+          </div>
+        </div>
+      </div>
+      <div class="row-text">
+        <span class="status-pill">Live in the app</span>
+        <h3>Predictive Advertising &amp; Buyer Interest</h3>
+        <p>This is the engine behind the pilot's 150% ad-credit bonus: an explainable model that scores buying likelihood from real signals, without ever naming individual shoppers — only aggregated counts a shop can size and target advertising against.</p>
+        <ul>
+          <li>Aggregated-only, privacy-respecting propensity scoring</li>
+          <li>Surfaces exactly where advertising could grow revenue, product by product</li>
+          <li>Target by likelihood to buy, proximity, similar-product interest, or cross-shop purchase history</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row reverse">
+      <div class="row-media">
+        <img src="img/shot-site-analytics.jpg" alt="Find-It! Site Analytics dashboard showing a connectivity map, reachability status, and network efficiency metrics">
+      </div>
+      <div class="row-text">
+        <span class="status-pill">Live in the app</span>
+        <h3>Site Analytics &amp; Accessibility Compliance</h3>
+        <p>Every mapped site doubles as an accessibility audit — flagging rooms unreachable by less mobile people, and scoring the building's overall connectivity and graph integrity.</p>
+        <ul>
+          <li>Connectivity map with accessible vs. inaccessible edges highlighted</li>
+          <li>Reachability status per room, useful for compliance reporting</li>
+          <li>Network efficiency metrics: average connectivity, floor transit load, graph integrity</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-media">
+        <img src="img/shot-mobile.jpg" alt="Find-It! app running on a mobile viewport, showing the responsive bottom navigation bar">
+      </div>
+      <div class="row-text">
+        <span class="status-pill">Live in the app</span>
+        <h3>Works Everywhere</h3>
+        <p>Same app, same data, responsive down to a phone screen — because most local "before I leave home" searches happen on mobile.</p>
+        <ul>
+          <li>Responsive layout, no separate mobile app required to try it</li>
+          <li>Bottom tab navigation on small screens</li>
+          <li>Built on the same live data as the desktop view — no separate mobile dataset</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section-tight" style="background:var(--panel)">
+  <div class="container">
+    <p class="eyebrow center">Coming next</p>
+    <h2 class="section-title center">What's honestly still ahead</h2>
+    <p class="section-sub center">Being upfront about what's a working prototype vs. production-ready matters more to us than overselling a roadmap.</p>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="status-pill progress">Prototype</span>
+        <h3>Real Payment Processing</h3>
+        <p>FindIt Checkout works end-to-end today, but runs on prototype payments. Connecting a real payment service provider is next, before any shop takes live transactions through it.</p>
+      </div>
+      <div class="feature-card">
+        <span class="status-pill progress">Planned</span>
+        <h3>Beyond Cold-Start Advertising</h3>
+        <p>The propensity model works from day one, but gets sharper with more signal. As pilot shops go live, targeting and forecasts improve with real shopper activity.</p>
+      </div>
+      <div class="feature-card">
+        <span class="status-pill progress">Planned</span>
+        <h3>Native Mobile Apps</h3>
+        <p>The responsive web app works well on a phone today; dedicated iOS/Android apps and embeddable widgets are the next step for reach.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="cta-banner">
+      <span class="badge" style="background:rgba(217,249,157,0.14)">Paid Founding Pilot · Vienna</span>
+      <h2>Want your shop mapped into this?</h2>
+      <p>Join the founding pilot and get your store mapped, your catalogue uploaded, and direct input into what we build next.</p>
+      <div class="btn-row" style="justify-content:center">
+        <a href="pilot.html#apply" class="btn btn-lime">See pilot details →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div style="max-width:280px">
+        <div class="footer-brand">Find<span style="color:var(--lime)">It!</span></div>
+        <p style="font-size:13.5px">Free local search and indoor navigation for independent shops — with a paid founding pilot open now in Vienna.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="pilot.html">Paid Pilot</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:michiel.dewilde@ist.ac.at">michiel.dewilde@ist.ac.at</a></li>
+          <li><a href="pilot.html#apply">Apply for the pilot</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Find-It!</span>
+      <span>Vienna, Austria</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
