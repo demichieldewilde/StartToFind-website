@@ -534,7 +534,5 @@ footer {
   font-style: italic;
 }
 .divider { height: 1px; background: var(--border); margin: 0; }
-.plan-pipeline { display: flex; align-items: center; gap: 18px; }
+.plan-pipeline { display: flex; flex-direction: column; gap: 18px; }
 .plan-pipeline > div { flex: 1; }
-.plan-pipeline .arrow { font-size: 26px; color: var(--muted); flex: 0; }
-@media (max-width: 640px) { .plan-pipeline { flex-direction: column; } .plan-pipeline .arrow { transform: rotate(90deg); } }
