@@ -1,4 +1,4 @@
-# Find-It! marketing site
+# StartToFind marketing site
 
 A fully static site (plain HTML/CSS/JS, no build step, no backend) — ready to host on GitHub Pages.
 
@@ -22,7 +22,7 @@ From this folder:
 ```bash
 git init
 git add .
-git commit -m "Find-It! marketing site"
+git commit -m "StartToFind marketing site"
 git branch -M main
 git remote add origin https://github.com/<your-username>/<your-repo>.git
 git push -u origin main
