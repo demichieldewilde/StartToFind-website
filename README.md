@@ -30,6 +30,10 @@ git push -u origin main
 
 Then in the repo on GitHub: **Settings → Pages → Source → Deploy from a branch → `main` / `/ (root)`**.
 
+## SEO and custom domains
+
+The canonical URLs, language alternates, social preview images, `robots.txt`, and `sitemap.xml` use the production domain `https://starttofind.com/`. If the production domain changes, replace that origin consistently in all eight HTML files, `robots.txt`, and `sitemap.xml` before launch.
+
 Your site will be live at:
 
 ```
