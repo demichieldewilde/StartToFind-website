@@ -11,7 +11,7 @@ A fully static site (plain HTML/CSS/JS, no build step, no backend) — ready to 
 
 ## Before you publish
 
-1. **Contact email** — every "Apply" / "Email us" button currently points to `michiel.dewilde@ist.ac.at`. Search-and-replace across all four `.html` files if you want a different address.
+1. **Contact email** — every "Apply" / "Email us" button currently points to `info@starttofind.com`. Search-and-replace across all four `.html` files if you want a different address.
 2. **Partner names** — XISTA and Startup Austria are shown as plain text badges (no logos), since I don't have rights to their actual logo files. Swap in real logos if you get permission, or leave as-is.
 3. Everything else (copy, stats, screenshots) is accurate to the app and business plan as of today — update it if either changes.
 
