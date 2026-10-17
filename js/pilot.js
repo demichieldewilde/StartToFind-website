@@ -1,5 +1,5 @@
 /* Pilot page: fee / ad-credit calculator and the pilot application form.
- * Used by pilot.html, pilot-de.html and pilot-uk.html. The page language comes
+ * Used by pilot.html and pilot-de.html. The page language comes
  * from <html lang>; the API base URL from <meta name="api-url">. For local
  * testing, ?api=http://localhost:3000 overrides it (localhost / 127.0.0.1 only).
  * Contract: FindIt/backend/src/server/registerPilotApplicationsRoutes.ts
@@ -16,8 +16,8 @@
   var MAIL = "info@starttofind.com";
 
   var lang = (document.documentElement.getAttribute("lang") || "en").slice(0, 2).toLowerCase();
-  if (lang !== "de" && lang !== "uk") lang = "en";
-  var LOCALE = { en: "en-GB", de: "de-AT", uk: "uk-UA" }[lang];
+  if (lang !== "de") lang = "en";
+  var LOCALE = { en: "en-GB", de: "de-AT" }[lang];
 
   var T = {
     en: {
@@ -67,30 +67,6 @@
       mail_subject: "StartToFind Pilotprojekt – Bewerbung",
       mail_intro: "Hallo StartToFind-Team, ich möchte mich für ein Pilotprojekt bewerben:",
       option_names: { self_encoding: "Kostenloses Pilotprojekt (Erfassung selbst)", encoding_by_us: "Pilotprojekt mit Erfassung durch StartToFind" }
-    },
-    uk: {
-      required: "Це поле обов'язкове.",
-      too_long: "Будь ласка, не більше {max} символів.",
-      email_invalid: "Будь ласка, введіть дійсну адресу електронної пошти.",
-      phone_invalid: "Будь ласка, введіть дійсний номер телефону.",
-      count_invalid: "Будь ласка, введіть ціле число від 0 до 1 000 000.",
-      count_required: "Будь ласка, вкажіть приблизну кількість товарів, щоб ми могли розрахувати вартість пілоту.",
-      option_required: "Будь ласка, оберіть один із варіантів пілоту.",
-      shop_type_required: "Будь ласка, оберіть тип магазину.",
-      consent_required: "Будь ласка, погодьтеся з повідомленням про конфіденційність, щоб ми могли з вами зв’язатися.",
-      summary: "Будь ласка, виправте позначені поля.",
-      sending: "Надсилаємо…",
-      rate_limited: "Забагато заявок з цієї мережі. Спробуйте пізніше або напишіть нам електронною поштою.",
-      network: "Не вдалося надіслати заявку. Перевірте з’єднання та спробуйте ще раз або напишіть нам безпосередньо.",
-      server: "Сталася помилка на нашому боці. Спробуйте ще раз або напишіть нам безпосередньо.",
-      years: function (n) { return n + " роки"; },
-      free_line: "Безкоштовний пілот: без оплати. Ви вносите товари в застосунок самостійно, а ми допомагаємо на старті.",
-      fee_line: "Вартість пілоту {fee} → {credit} рекламного кредиту + {years} безкоштовної аналітики.",
-      success_paid: "Ваш пілот із внесенням товарів нами: {count} товарів, внесок {fee}, повертається як {credit} рекламного кредиту, плюс {years} безкоштовної аналітики.",
-      success_free: "Ваш безкоштовний пілот: без оплати, ви вносите товари в застосунок, а ми допомагаємо на старті.",
-      mail_subject: "Заявка на пілот StartToFind",
-      mail_intro: "Вітаю, команда StartToFind! Я хочу подати заявку на пілот:",
-      option_names: { self_encoding: "Безкоштовний пілот (вносимо товари самі)", encoding_by_us: "Пілот із внесенням товарів командою StartToFind" }
     }
   }[lang];
 
